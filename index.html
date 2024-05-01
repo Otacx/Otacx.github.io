@@ -1,39 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的网站</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    header {
+        background: #50b3a2;
+        color: white;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #e8491d 3px solid;
+    }
+    header a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    header ul {
+        padding: 0;
+        list-style: none;
+    }
+    header ul li {
+        display: inline;
+        margin-left: 20px;
+    }
+    header #branding {
+        float: left;
+    }
+    header #branding h1 {
+        margin: 0;
+    }
+    header nav {
+        float: right;
+        margin-top: 10px;
+    }
+    header .highlight, header .current a {
+        color: #e8491d;
+        font-weight: bold;
+    }
+    header a:hover {
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .showcase {
+        min-height: 400px;
+        background: url('background.jpg') no-repeat 0 -400px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .showcase h1 {
+        margin-top: 100px;
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+    .showcase p {
+        font-size: 20px;
+    }
+    footer {
+        padding: 20px;
+        margin-top: 20px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+    }
+</style>
 </head>
 <body>
     <header>
-        <h1>欢迎来到我的个人网站</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">关于我</a></li>
-                <li><a href="#projects">我的项目</a></li>
-                <li><a href="#contact">联系我</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div id="branding">
+                <h1>我的网站</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="services.html">服务</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="about">
-            <h2>关于我</h2>
-            <p>这里是关于我的介绍。</p>
-        </section>
-        <section id="projects">
-            <h2>我的项目</h2>
-            <p>这里是我的项目列表。</p>
-        </section>
-        <section id="contact">
-            <h2>联系我</h2>
-            <p>这里是我的联系方式。</p>
-        </section>
-    </main>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>欢迎来到我的网站</h1>
+            <p>这里是一个简单的网站示例，展示了如何创建一个美观且响应式的布局。</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>关于我们</h2>
+        <p>这里是关于我们的介绍，可以详细介绍你的公司、团队或者个人。</p>
+    </section>
+
     <footer>
-        <p>版权所有 &copy; 2024</p>
+        <p>版权所有 &copy; 2024 我的网站</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
